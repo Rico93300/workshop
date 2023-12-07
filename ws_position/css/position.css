@@ -1,0 +1,79 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+main {
+	height: 1200px;
+}
+
+.carre {
+	width: 140px;
+	height: 140px;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 150px solid #ff00ff;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	position: sticky;
+	top: 0px;
+	left: calc(50% - 100px);
+    z-index: 10;
+}
+.ombre {
+	width: 100px;
+	height: 100px;
+	background: gray;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	border-radius: 70px;
+	position: relative;    
+	top: calc(15% - 100px);
+	left: calc(50% - 50px);
+}
+.rond {
+	width: 100px;
+	height: 100px;
+	background: #00FFFF;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	border-radius: 70px;
+	position: absolute;    
+	top: calc(50% - 100px);
+	left: calc(50% - 50px);
+    z-index: 5;
+}
+main > :first-child {
+	background-color: #ff0000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+main > :nth-child(2) {
+	background-color: blue;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+main > :nth-child(4) {
+	background-color: green;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+main > :last-child {
+	background-color: yellow;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.conteneur {
+	height: 100%;
+	margin: 140px;
+    border: 1px solid black;
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+}
